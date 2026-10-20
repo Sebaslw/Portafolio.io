@@ -1,0 +1,4 @@
+Coloca aquí capturas REALES de tus proyectos (formato .webp, 1200x600 aprox.).
+Luego regístralas en assets/js/config.js -> github.images, por ejemplo:
+  "appfinanzas.github.io": "assets/img/projects/appfinanzas.webp"
+Si no hay captura, la tarjeta muestra un icono de categoría (no una imagen inventada).
