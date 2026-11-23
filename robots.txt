@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sebaslw.github.io/sitemap.xml
+Sitemap: https://sebaslw.github.io/Portafolio.io/sitemap.xml

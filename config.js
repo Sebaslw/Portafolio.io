@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
 
   // URL definitiva del sitio (necesaria para Open Graph y sitemap).
   // Cámbiala si publicas en otra dirección o con dominio propio.
-  siteUrl: "https://sebaslw.github.io/",
+  siteUrl: "https://sebaslw.github.io/Portafolio.io/",
 
   contact: {
     email: "sebastianwilson03@hotmail.com",
@@ -31,10 +31,12 @@ window.SITE_CONFIG = {
     user: "Sebaslw",
     cacheMinutes: 60,
     // Repositorios que no quieres mostrar (nombre exacto).
-    hidden: [],
+    hidden: ["Portafolio.io"],
     // Categoría de cada repositorio. Los repos nuevos sin entrada se
     // clasifican automáticamente según su lenguaje.
     categories: {
+      "PK-PENTECOSTAL": "aplicaciones",
+      "pk-pentecostal.io": "web",
       "desbord-it.guthub.io": "herramientas",
       "appfinanzas.github.io": "aplicaciones",
       "QR": "herramientas",
@@ -44,8 +46,10 @@ window.SITE_CONFIG = {
     // Ej.: "appfinanzas.github.io": "assets/img/projects/appfinanzas.webp"
     images: {},
     // Respaldo si la API de GitHub no responde o se agota el límite.
-    // Datos verificados en el perfil público el 20/10/2026.
+    // Datos verificados en el perfil público el 23/11/2026.
     fallback: [
+      { name: "PK-PENTECOSTAL", description: "Software gratuito para iglesias: Biblia, canciones y rótulos para proyector y OBS Studio, con control desde el celular.", language: "JavaScript", html_url: "https://github.com/Sebaslw/PK-PENTECOSTAL" },
+      { name: "pk-pentecostal.io", description: "Página web de PK-PENTECOSTAL: Biblia, canciones y OBS para iglesias", language: "HTML", html_url: "https://github.com/Sebaslw/pk-pentecostal.io" },
       { name: "desbord-it.guthub.io", description: "Mesa de Ayuda IT- COMPLETO", language: "JavaScript", html_url: "https://github.com/Sebaslw/desbord-it.guthub.io" },
       { name: "appfinanzas.github.io", description: "App de Finanzas- Pirfecional", language: "JavaScript", html_url: "https://github.com/Sebaslw/appfinanzas.github.io" },
       { name: "QR", description: "", language: "HTML", html_url: "https://github.com/Sebaslw/QR" },

@@ -7,26 +7,23 @@ Sitio estático hecho con HTML5, CSS3, Bootstrap 5.3, JavaScript vanilla, Google
 ## Estructura
 
 ```text
-portfolio-sebaslw/
-├── index.html                 Página principal (todas las secciones)
-├── assets/
-│   ├── css/styles.css         Identidad visual SEBASLW
-│   ├── js/config.js           ← DATOS EDITABLES: correo, teléfono, enlaces, categorías de repos
-│   ├── js/main.js             Navegación, animaciones, botón volver arriba
-│   ├── js/github.js           Galería conectada a la API pública de GitHub
-│   ├── img/                   Foto, favicon, imagen Open Graph
-│   │   ├── projects/          Capturas reales de proyectos (opcional)
-│   │   └── certificates/      Imágenes de certificados (opcional, ver advertencia)
-│   └── cv/CV_Sebastian_Lopez_Actualizado.pdf   Solo las 2 páginas del CV
-├── favicon.ico
+Portafolio.io/
+├── index.html                        Página principal (todas las secciones)
+├── styles.css                        Identidad visual SEBASLW
+├── config.js                         ← DATOS EDITABLES: correo, enlaces, categorías de repos
+├── main.js                           Navegación, animaciones, botón volver arriba
+├── github.js                         Galería conectada a la API pública de GitHub
+├── profile.jpg / profile.webp        Foto de perfil
+├── og-image.png, favicon.*           Imagen Open Graph e íconos
+├── CV_Sebastian_Lopez_Actualizado.pdf  Solo las 2 páginas del CV (sin certificados)
+├── assets/img/projects/              Capturas de proyectos (opcional)
 ├── robots.txt
-├── sitemap.xml
-└── .nojekyll
+└── sitemap.xml
 ```
 
 ## Editar datos
 
-Todo lo que cambia con frecuencia está en `assets/js/config.js`:
+Todo lo que cambia con frecuencia está en `config.js`:
 
 | Qué | Dónde |
 |---|---|
@@ -39,6 +36,8 @@ Todo lo que cambia con frecuencia está en `assets/js/config.js`:
 | URL del sitio | `siteUrl` (además actualiza las etiquetas `canonical` y `og:` en `index.html`, `robots.txt` y `sitemap.xml`) |
 
 Experiencia, formación y certificaciones están escritas directamente en `index.html` (mejor para SEO). Busca los comentarios `<!-- ============ SECCIÓN ============ -->`.
+
+Sitio publicado: **https://sebaslw.github.io/Portafolio.io/**
 
 ## Galería de GitHub
 
