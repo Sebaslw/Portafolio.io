@@ -14,7 +14,7 @@
   <meta property="og:locale" content="es_CO">
   <meta property="og:site_name" content="SEBASLW — Tech Premium Portfolio">
   <meta property="og:title" content="Sebastián Felipe López Wilson · Soporte TI, Redes y Desarrollo Web">
-  <meta property="og:description" content="Conectando sistemas. Resolviendo problemas. Construyendo soluciones.">
+  <meta property="og:description" content="Coordinador de Sistemas: mantengo funcionando la tecnología de un hotel que nunca cierra. Soporte TI N1–N3, redes e infraestructura y desarrollo web.">
   <meta property="og:url" content="https://sebaslw.github.io/Portafolio.io/">
   <meta property="og:image" content="https://sebaslw.github.io/Portafolio.io/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -90,7 +90,7 @@
             </p>
             <h1 id="hero-title" class="hero-in" style="--d:1">
               <span class="hero-name">Sebastián Felipe López Wilson</span>
-              <span class="hero-headline">Conectando sistemas. <span class="grad">Resolviendo problemas.</span> Construyendo soluciones.</span>
+              <span class="hero-headline">Mantengo funcionando la tecnología de un hotel que <span class="grad">nunca cierra.</span></span>
             </h1>
             <p class="lead hero-in" style="--d:2">
               Coordinador de Sistemas con 2 años de experiencia en soporte e infraestructura TI para hotelería de operación continua 24/7. Técnico SENA en redes internas de telecomunicaciones, con formación en desarrollo de sistemas de información y seis cursos de Cisco Networking Academy.
@@ -102,8 +102,8 @@
               <li><i class="bi bi-code-slash" aria-hidden="true"></i> Desarrollo web</li>
             </ul>
             <div class="d-flex flex-wrap gap-3 hero-in" style="--d:4">
-              <a href="#proyectos" class="btn btn-primary-glow"><i class="bi bi-grid-1x2" aria-hidden="true"></i> Explorar proyectos</a>
-              <a href="#experiencia" class="btn btn-ghost"><i class="bi bi-briefcase" aria-hidden="true"></i> Ver experiencia</a>
+              <a href="#" data-link="cv" class="btn btn-primary-glow" target="_blank" rel="noopener" download><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Descargar CV</a>
+              <a href="#proyectos" class="btn btn-ghost"><i class="bi bi-grid-1x2" aria-hidden="true"></i> Ver proyectos</a>
             </div>
             <div class="social-row hero-in" style="--d:5">
               <a href="#" data-link="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sebaslw (abre en una pestaña nueva)"><i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span></a>
@@ -326,12 +326,67 @@
       </div>
     </section>
 
+    <!-- ============ PROYECTO DESTACADO ============ -->
+    <section id="proyectos" class="section section-alt" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-tag">// 04 — Proyecto destacado</p>
+          <h2 id="feat-title" class="section-title">PK-PENTECOSTAL</h2>
+          <p class="section-sub">Software gratuito para proyectar la Biblia y las canciones en el culto y en la transmisión en vivo, desde un solo panel.</p>
+        </div>
+
+        <div class="row g-4 g-lg-5 align-items-start mt-1">
+          <div class="col-lg-7 reveal">
+            <figure class="feat-shot">
+              <img src="assets/img/projects/pk-pentecostal-panel.webp" width="1400" height="788" loading="lazy" alt="Panel principal de PK-PENTECOSTAL: lista de libros de la Biblia, capítulo Juan 3 con el versículo 16 seleccionado y vistas previas de la salida al proyector y a OBS">
+              <figcaption>Panel principal: el versículo elegido sale al proyector y a OBS al mismo tiempo.</figcaption>
+            </figure>
+            <div class="feat-thumbs">
+              <figure class="feat-shot">
+                <img src="assets/img/projects/pk-pentecostal-proyector.webp" width="800" height="450" loading="lazy" alt="Versículo Juan 3:16 proyectado a pantalla completa sobre un fondo verde oscuro">
+                <figcaption>Salida al proyector</figcaption>
+              </figure>
+              <figure class="feat-shot feat-phone">
+                <img src="assets/img/projects/pk-pentecostal-movil.webp" width="360" height="779" loading="lazy" alt="Control desde el celular mostrando las diapositivas de una canción">
+                <figcaption>Control desde el celular</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="feat-block">
+              <h3><i class="bi bi-exclamation-circle" aria-hidden="true"></i> El reto</h3>
+              <p>En la iglesia (IPUC Natania 6ª Etapa) había que mostrar versículos y letras en el proyector y, a la vez, en la transmisión en vivo, sin depender de internet durante el culto.</p>
+            </div>
+            <div class="feat-block">
+              <h3><i class="bi bi-lightbulb" aria-hidden="true"></i> Lo que construí</h3>
+              <ul class="feat-list">
+                <li><strong>9 versiones de la Biblia</strong> con búsqueda natural (<code>jn 3 16</code>, <code>sal 23</code>) y por palabras.</li>
+                <li><strong>6 cancioneros</strong> y editor de canciones con respaldo automático.</li>
+                <li>Salida a pantalla completa para el proyector y <strong>capa transparente para OBS Studio</strong>.</li>
+                <li><strong>Control desde el celular</strong> escaneando un código QR.</li>
+                <li>Funciona <strong>sin internet</strong>; interfaz en español e inglés.</li>
+                <li>App de escritorio con Electron para Windows, macOS y Linux. Versión 2.0.6.</li>
+              </ul>
+            </div>
+            <ul class="tag-row mb-4" aria-label="Tecnologías">
+              <li>JavaScript</li><li>Node.js</li><li>Electron</li><li>OBS Studio</li><li>HTML · CSS</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-primary-glow" href="https://sebaslw.github.io/pk-pentecostal.io/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Ver sitio del proyecto</a>
+              <a class="btn btn-ghost" href="https://github.com/Sebaslw/PK-PENTECOSTAL" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> Código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ PROYECTOS ============ -->
-    <section id="proyectos" class="section section-alt" aria-labelledby="proj-title">
+    <section id="repositorios" class="section" aria-labelledby="proj-title">
       <div class="container">
         <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 reveal">
           <div>
-            <p class="section-tag">// 04 — Proyectos</p>
+            <p class="section-tag">// 05 — Más proyectos</p>
             <h2 id="proj-title" class="section-title">Repositorios en GitHub</h2>
             <p class="section-sub mb-0">Cargados en vivo desde la API pública de GitHub.</p>
           </div>
@@ -352,10 +407,10 @@
     </section>
 
     <!-- ============ FORMACIÓN ============ -->
-    <section id="formacion" class="section" aria-labelledby="edu-title">
+    <section id="formacion" class="section section-alt" aria-labelledby="edu-title">
       <div class="container">
         <div class="reveal">
-          <p class="section-tag">// 05 — Formación</p>
+          <p class="section-tag">// 06 — Formación</p>
           <h2 id="edu-title" class="section-title">Formación académica</h2>
           <p class="section-sub">Títulos y certificados de formación técnica, del más reciente al más antiguo.</p>
         </div>
@@ -397,10 +452,10 @@
     </section>
 
     <!-- ============ CERTIFICACIONES ============ -->
-    <section id="certificaciones" class="section section-alt" aria-labelledby="cert-title">
+    <section id="certificaciones" class="section" aria-labelledby="cert-title">
       <div class="container">
         <div class="reveal">
-          <p class="section-tag">// 06 — Cursos y reconocimientos</p>
+          <p class="section-tag">// 07 — Cursos y reconocimientos</p>
           <h2 id="cert-title" class="section-title">Certificaciones, cursos y reconocimientos</h2>
           <p class="section-sub">Certificados de finalización de cursos. No se presentan como certificaciones profesionales de examen.</p>
         </div>
@@ -476,62 +531,38 @@
     </section>
 
     <!-- ============ SERVICIOS ============ -->
-    <section id="servicios" class="section" aria-labelledby="srv-title">
+    <section id="servicios" class="section section-alt" aria-labelledby="srv-title">
       <div class="container">
         <div class="reveal">
-          <p class="section-tag">// 07 — Áreas de aporte</p>
+          <p class="section-tag">// 08 — Áreas de aporte</p>
           <h2 id="srv-title" class="section-title">Cómo puedo aportar a tu equipo</h2>
           <p class="section-sub">Áreas en las que tengo experiencia o formación, abiertas a oportunidades laborales y colaboraciones.</p>
         </div>
         <div class="row g-4 mt-1">
           <div class="col-md-6 col-lg-4 reveal">
             <article class="service-card">
-              <i class="bi bi-tools" aria-hidden="true"></i>
-              <h3>Soporte técnico y mantenimiento</h3>
-              <p>Diagnóstico de fallas de hardware y software, y mantenimiento preventivo y correctivo de equipos.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              <i class="bi bi-headset" aria-hidden="true"></i>
+              <h3>Soporte TI y mesa de ayuda</h3>
+              <p>Soporte N1–N3, gestión de tickets por criticidad e impacto, seguimiento de SLA e indicadores, y mantenimiento preventivo y correctivo de equipos.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4 reveal">
             <article class="service-card">
-              <i class="bi bi-ticket-detailed" aria-hidden="true"></i>
-              <h3>Mesa de ayuda e incidencias</h3>
-              <p>Gestión de tickets por criticidad e impacto, seguimiento de SLA, indicadores de TI y atención cercana al usuario interno.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              <i class="bi bi-diagram-3" aria-hidden="true"></i>
+              <h3>Redes e infraestructura</h3>
+              <p>Administración y monitoreo de red interna, direccionamiento IP, routers, switches y cableado, con foco en la continuidad de operaciones 24/7.</p>
             </article>
           </div>
           <div class="col-md-6 col-lg-4 reveal">
             <article class="service-card">
-              <i class="bi bi-wifi" aria-hidden="true"></i>
-              <h3>Redes y conectividad</h3>
-              <p>Apoyo en configuración de routers y switches, direccionamiento IP, cableado y monitoreo de red interna.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+              <h3>Desarrollo web y herramientas</h3>
+              <p>Sitios responsive y aplicaciones de apoyo con HTML, CSS y JavaScript, como PK-PENTECOSTAL o la mesa de ayuda DESBORD IT.</p>
             </article>
           </div>
-          <div class="col-md-6 col-lg-4 reveal">
-            <article class="service-card">
-              <i class="bi bi-window-stack" aria-hidden="true"></i>
-              <h3>Sitios web responsive</h3>
-              <p>Páginas web con HTML, CSS y JavaScript, como las que publico en mis repositorios.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal">
-            <article class="service-card">
-              <i class="bi bi-wrench-adjustable-circle" aria-hidden="true"></i>
-              <h3>Herramientas web</h3>
-              <p>Aplicaciones de apoyo como mesas de ayuda, software de proyección para iglesias (PK-PENTECOSTAL) o utilidades para el trabajo diario.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 reveal">
-            <article class="service-card">
-              <i class="bi bi-gear-wide-connected" aria-hidden="true"></i>
-              <h3>Continuidad operativa</h3>
-              <p>Apoyo tecnológico a operaciones que funcionan 24/7, con foco en disponibilidad de equipos y servicios.</p>
-              <a href="#contacto" class="link-arrow">Conversemos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-            </article>
-          </div>
+        </div>
+        <div class="text-center mt-4 reveal">
+          <a href="#contacto" class="btn btn-ghost"><i class="bi bi-chat-dots" aria-hidden="true"></i> Conversemos</a>
         </div>
       </div>
     </section>
@@ -542,7 +573,7 @@
         <div class="contact-panel reveal">
           <div class="row g-4 g-lg-5 align-items-center">
             <div class="col-lg-6">
-              <p class="section-tag">// 08 — Contacto</p>
+              <p class="section-tag">// 09 — Contacto</p>
               <h2 id="contact-title" class="section-title">Hablemos de tecnología</h2>
               <p class="section-sub">Estoy disponible para oportunidades en soporte TI, redes e infraestructura, y para colaborar en proyectos web.</p>
               <a class="btn btn-primary-glow mt-2" href="#" data-email-link><i class="bi bi-envelope-paper" aria-hidden="true"></i> Escríbeme un correo</a>

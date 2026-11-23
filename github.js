@@ -6,7 +6,7 @@
   const labels = cfg.categoryLabels || {};
   const USER = gh.user || "Sebaslw";
   const API = "https://api.github.com/users/" + encodeURIComponent(USER) + "/repos?per_page=100&sort=pushed&type=owner";
-  const CACHE_KEY = "sebaslw_repos_v1";
+  const CACHE_KEY = "sebaslw_repos_v2";
   const CACHE_MS = (gh.cacheMinutes || 60) * 60 * 1000;
 
   const grid = document.getElementById("repoGrid");

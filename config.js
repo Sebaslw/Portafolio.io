@@ -31,29 +31,34 @@ window.SITE_CONFIG = {
     user: "Sebaslw",
     cacheMinutes: 60,
     // Repositorios que no quieres mostrar (nombre exacto).
-    hidden: ["Portafolio.io"],
+    // pk-pentecostal.io se omite porque ya está en la sección destacada.
+    hidden: ["Portafolio.io", "pk-pentecostal.io"],
     // Categoría de cada repositorio. Los repos nuevos sin entrada se
     // clasifican automáticamente según su lenguaje.
     categories: {
       "PK-PENTECOSTAL": "aplicaciones",
       "pk-pentecostal.io": "web",
-      "desbord-it.guthub.io": "herramientas",
+      "desbord-it": "herramientas",
       "appfinanzas.github.io": "aplicaciones",
       "QR": "herramientas",
       "Laboratorio_CCNA_EIGRP-ASA": "redes"
     },
     // Captura real opcional por repositorio (ruta relativa).
     // Ej.: "appfinanzas.github.io": "assets/img/projects/appfinanzas.webp"
-    images: {},
+    images: {
+      "PK-PENTECOSTAL": "assets/img/projects/pk-pentecostal-card.webp",
+      "desbord-it": "assets/img/projects/desbord-it.webp",
+      "appfinanzas.github.io": "assets/img/projects/appfinanzas.webp",
+      "QR": "assets/img/projects/qr.webp"
+    },
     // Respaldo si la API de GitHub no responde o se agota el límite.
     // Datos verificados en el perfil público el 23/11/2026.
     fallback: [
       { name: "PK-PENTECOSTAL", description: "Software gratuito para iglesias: Biblia, canciones y rótulos para proyector y OBS Studio, con control desde el celular.", language: "JavaScript", html_url: "https://github.com/Sebaslw/PK-PENTECOSTAL" },
-      { name: "pk-pentecostal.io", description: "Página web de PK-PENTECOSTAL: Biblia, canciones y OBS para iglesias", language: "HTML", html_url: "https://github.com/Sebaslw/pk-pentecostal.io" },
-      { name: "desbord-it.guthub.io", description: "Mesa de Ayuda IT- COMPLETO", language: "JavaScript", html_url: "https://github.com/Sebaslw/desbord-it.guthub.io" },
-      { name: "appfinanzas.github.io", description: "App de Finanzas- Pirfecional", language: "JavaScript", html_url: "https://github.com/Sebaslw/appfinanzas.github.io" },
-      { name: "QR", description: "", language: "HTML", html_url: "https://github.com/Sebaslw/QR" },
-      { name: "Laboratorio_CCNA_EIGRP-ASA", description: "Laboratorio CCNA CISCO", language: null, html_url: "https://github.com/Sebaslw/Laboratorio_CCNA_EIGRP-ASA" }
+      { name: "desbord-it", description: "Help Desk IT multisede: tickets con deduplicación, clasificación, SLA, alertas, reportes y permisos. Demo 100% en el navegador (HTML, CSS y JavaScript).", language: "JavaScript", html_url: "https://github.com/Sebaslw/desbord-it" },
+      { name: "appfinanzas.github.io", description: "App web de finanzas personales en pesos colombianos: ingresos, gastos, presupuestos, ahorro, deudas, gráficos y exportación a Excel, CSV y PDF.", language: "JavaScript", html_url: "https://github.com/Sebaslw/appfinanzas.github.io" },
+      { name: "QR", description: "Generador de códigos QR para texto, enlaces y redes WiFi, con descarga de la imagen.", language: "CSS", html_url: "https://github.com/Sebaslw/QR" },
+      { name: "Laboratorio_CCNA_EIGRP-ASA", description: "Laboratorio CCNA en Cisco Packet Tracer: enrutamiento EIGRP y firewall Cisco ASA, con informe técnico de arquitectura de red segura.", language: null, html_url: "https://github.com/Sebaslw/Laboratorio_CCNA_EIGRP-ASA" }
     ]
   },
 

@@ -374,3 +374,19 @@ h1, h2, h3, h4 { font-family: var(--f-display); color: var(--text); letter-spaci
   .hero-in { opacity: 1; transform: none; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- PROYECTO DESTACADO ---------- */
+.feat-shot { margin: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+.feat-shot img { width: 100%; }
+.feat-shot figcaption { padding: .6rem 1rem; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); }
+.feat-thumbs { display: grid; grid-template-columns: 1fr 150px; gap: 1rem; margin-top: 1rem; align-items: start; }
+.feat-phone img { max-height: 260px; object-fit: cover; object-position: top; }
+.feat-block { margin-bottom: 1.6rem; }
+.feat-block h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; }
+.feat-block h3 i { color: var(--cyan); margin-right: .35rem; }
+.feat-block p { color: var(--muted); margin: 0; }
+.feat-list { padding-left: 1.1rem; margin: 0; color: var(--muted); }
+.feat-list li { margin-bottom: .45rem; }
+.feat-list strong { color: var(--text); }
+.feat-list code { font-family: var(--f-mono); font-size: .85em; color: var(--cyan); background: rgba(69,229,244,.08); padding: .05rem .35rem; border-radius: 5px; }
+@media (max-width: 575.98px) { .feat-thumbs { grid-template-columns: 1fr; } .feat-phone { max-width: 200px; } }
