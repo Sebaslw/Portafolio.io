@@ -392,30 +392,23 @@ h1, h2, h3, h4 { font-family: var(--f-display); color: var(--text); letter-spaci
 @media (max-width: 575.98px) { .feat-thumbs { grid-template-columns: 1fr; } .feat-phone { max-width: 200px; } }
 
 /* ---------- LABORATORIO DE REDES ---------- */
-.topo-frame { margin: 0; padding: 1rem 1rem 0; border: 1px solid var(--line); border-radius: var(--radius); background: radial-gradient(ellipse at 50% 30%, rgba(79,140,255,.10), transparent 70%), var(--surface); box-shadow: var(--shadow); }
-.topo-frame figcaption { padding: .7rem .25rem; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); margin-top: .5rem; }
-.topo { width: 100%; height: auto; display: block; font-family: var(--f-mono); }
-.topo .zone { fill: rgba(79,140,255,.04); stroke: var(--line-strong); stroke-dasharray: 5 5; }
-.topo .zone-remote { fill: rgba(69,229,244,.04); stroke: rgba(69,229,244,.35); }
-.topo .zone-label { fill: var(--text); font-size: 11px; letter-spacing: .04em; }
-.topo .zone-label.dim { fill: var(--muted); font-size: 10px; letter-spacing: 0; }
-.topo .ln { stroke: rgba(154,168,187,.55); stroke-width: 2; fill: none; }
-.topo .ln-wan { stroke: var(--cyan); stroke-width: 2.5; stroke-dasharray: 8 5; animation: topo-flow 1.6s linear infinite; }
-.topo .ln-out { stroke: var(--blue); stroke-width: 2.5; }
-.topo .ln-lo { stroke: var(--muted); }
-.topo .ln-label { fill: var(--text); font-size: 11px; text-anchor: middle; }
-.topo .ln-label.dim { fill: var(--muted); font-size: 10px; }
-.topo .eigrp { fill: var(--cyan); font-size: 12px; font-weight: 500; text-anchor: middle; letter-spacing: .06em; }
-.topo .nd circle, .topo .nd rect, .topo .nd-asa > path:first-child { fill: var(--surface-2); stroke: var(--blue); stroke-width: 2; }
-.topo .nd-router path { stroke: var(--cyan); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.topo .nd-switch path, .topo .nd-pc path { stroke: var(--muted); stroke-width: 2; fill: none; stroke-linecap: round; }
-.topo .nd-asa > path:first-child { stroke: var(--cyan); fill: rgba(69,229,244,.10); }
-.topo .asa-lock { stroke: var(--cyan); stroke-width: 1.8; fill: none; }
-.topo .nd-name { fill: var(--text); font-size: 12px; font-weight: 500; text-anchor: middle; font-family: var(--f-display); }
-.topo .nd-sub { fill: var(--muted); font-size: 10px; text-anchor: middle; }
-@keyframes topo-flow { to { stroke-dashoffset: -26; } }
-@media (prefers-reduced-motion: reduce) { .topo .ln-wan { animation: none; } }
+.topo-frame { margin: 0; padding: .75rem .75rem 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+.topo-frame figcaption { padding: .7rem .25rem; font-size: .85rem; color: var(--muted); }
+.topo { width: 100%; height: auto; display: block; font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+.topo-cisco .topo-bg { fill: #fbfcfd; }
+.topo-cisco .zone { fill: #eef4fb; stroke: #9db8d6; stroke-dasharray: 5 4; }
+.topo-cisco .zone-r { fill: #eef8f6; stroke: #94c8bd; }
+.topo-cisco .ln { stroke: #1f2329; stroke-width: 2.4; fill: none; }
+.topo-cisco .ln-serial { stroke: #d32f2f; stroke-width: 2.4; fill: none; stroke-linejoin: round; }
+.topo-cisco .eigrp-pill { fill: #fff1f0; stroke: #e7a3a0; }
+.topo-cisco .t-eigrp { fill: #b3261e; font-size: 12px; font-weight: 700; letter-spacing: .04em; }
+.topo-cisco .t-zone { fill: #29507a; font-size: 12px; font-weight: 700; }
+.topo-cisco .t-zone-r { fill: #24695c; }
+.topo-cisco .t-net { fill: #1f2329; font-size: 12px; font-weight: 700; }
+.topo-cisco .t-if { fill: #1f2329; font-size: 11.5px; }
+.topo-cisco .t-dev { fill: #111418; font-size: 12.5px; font-weight: 700; }
+.topo-cisco .t-sub { fill: #5b6470; font-size: 11px; }
 .feat-block code { font-family: var(--f-mono); font-size: .85em; color: var(--cyan); background: rgba(69,229,244,.08); padding: .05rem .35rem; border-radius: 5px; }
-.topo-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.topo-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; }
 .topo-hint { display: none; color: var(--cyan); }
-@media (max-width: 575.98px) { .topo { min-width: 620px; } .topo-hint { display: inline; } }
+@media (max-width: 575.98px) { .topo { min-width: 700px; } .topo-hint { display: inline; } }

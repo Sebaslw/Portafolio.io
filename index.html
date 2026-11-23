@@ -393,87 +393,116 @@
         <div class="row g-4 g-lg-5 align-items-center mt-1">
           <div class="col-lg-7 reveal">
             <figure class="topo-frame">
-          <div class="topo-scroll" tabindex="0" aria-label="Diagrama de topología; en pantallas pequeñas se puede desplazar horizontalmente"><svg class="topo" viewBox="0 0 760 470" role="img" aria-labelledby="topoTitle topoDesc">
+          <div class="topo-scroll" tabindex="0" aria-label="Diagrama de topología; en pantallas pequeñas se puede desplazar horizontalmente"><svg class="topo topo-cisco" viewBox="0 0 820 510" role="img" aria-labelledby="topoTitle topoDesc">
             <title id="topoTitle">Topología del laboratorio CCNA EIGRP y ASA</title>
             <desc id="topoDesc">Tres routers Cisco 1941 forman un backbone WAN con EIGRP AS 10: R1 se une a R2 por la red 10.10.10.0/30 y R2 a R3 por 10.20.20.0/30. R1 tiene la loopback 172.20.1.0/24 y se conecta al firewall ASA 5505 por la red outside 209.165.200.224/27. Detrás del ASA está la LAN interna 192.168.10.0/24 con los switches S1 y S2 y los equipos PC A y PC B. Detrás de R3 está la LAN remota 172.30.3.0/24 con el switch S3 y PC C.</desc>
+            <defs>
+              <linearGradient id="tg-body" x1="0" x2="1"><stop offset="0" stop-color="#1b5f9e"/><stop offset=".5" stop-color="#2f7fc4"/><stop offset="1" stop-color="#1b5f9e"/></linearGradient>
+              <linearGradient id="tg-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cb8ea"/><stop offset="1" stop-color="#4a97d6"/></linearGradient>
+              <linearGradient id="tg-side" x1="0" x2="1"><stop offset="0" stop-color="#174f85"/><stop offset="1" stop-color="#123f6b"/></linearGradient>
+              <linearGradient id="tg-case" x1="0" x2="1"><stop offset="0" stop-color="#f4f4f1"/><stop offset="1" stop-color="#d6d6d1"/></linearGradient>
+              <marker id="tg-ar" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6 z" fill="#fff"/></marker>
 
+              <!-- Router: cilindro con flechas -->
+              <symbol id="ic-router" overflow="visible">
+                <path d="M-30 -6 v14 a30 10 0 0 0 60 0 v-14" fill="url(#tg-body)" stroke="#0f3d66" stroke-width="1"/>
+                <ellipse cx="0" cy="-6" rx="30" ry="10" fill="url(#tg-top)" stroke="#0f3d66" stroke-width="1"/>
+                <g stroke="#fff" stroke-width="1.8" fill="none" marker-end="url(#tg-ar)">
+                  <path d="M-21 -9 L-8 -6"/><path d="M21 -3 L8 -6"/>
+                  <path d="M-4 -10 L-15 -2"/><path d="M4 -2 L15 -10"/>
+                </g>
+              </symbol>
+
+              <!-- Switch: caja plana con flechas -->
+              <symbol id="ic-switch" overflow="visible">
+                <path d="M-34 -6 L-24 -14 H34 L24 -6 Z" fill="url(#tg-top)" stroke="#0f3d66" stroke-width="1"/>
+                <rect x="-34" y="-6" width="58" height="18" fill="url(#tg-body)" stroke="#0f3d66" stroke-width="1"/>
+                <path d="M24 -6 L34 -14 V4 L24 12 Z" fill="url(#tg-side)" stroke="#0f3d66" stroke-width="1"/>
+                <g stroke="#fff" stroke-width="1.6" fill="none" marker-end="url(#tg-ar)">
+                  <path d="M-20 -8 H6"/><path d="M14 -12 H-12"/>
+                </g>
+              </symbol>
+
+              <!-- Firewall ASA: cubo con emblema y base de ladrillos -->
+              <symbol id="ic-asa" overflow="visible">
+                <path d="M-24 -30 L-14 -40 H34 L24 -30 Z" fill="url(#tg-top)" stroke="#0f3d66" stroke-width="1"/>
+                <rect x="-24" y="-30" width="48" height="38" fill="url(#tg-body)" stroke="#0f3d66" stroke-width="1"/>
+                <path d="M24 -30 L34 -40 V-2 L24 8 Z" fill="url(#tg-side)" stroke="#0f3d66" stroke-width="1"/>
+                <circle cx="0" cy="-11" r="12" fill="none" stroke="#fff" stroke-width="2.2"/>
+                <g stroke="#fff" stroke-width="1.6" fill="none" marker-end="url(#tg-ar)"><path d="M-8 -14 H6"/><path d="M8 -8 H-6"/></g>
+                <path d="M9 -3 L16 4" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <rect x="-24" y="8" width="48" height="14" fill="#e23b4a" stroke="#9e1f2b" stroke-width="1"/>
+                <path d="M24 8 L34 -2 V12 L24 22 Z" fill="#b82634" stroke="#9e1f2b" stroke-width="1"/>
+                <path d="M-24 15 H24 M-12 8 V15 M4 8 V15 M18 8 V15 M-18 15 V22 M-4 15 V22 M12 15 V22" stroke="#fff" stroke-width="1"/>
+              </symbol>
+
+              <!-- PC: monitor y torre -->
+              <symbol id="ic-pc" overflow="visible">
+                <rect x="-24" y="-20" width="34" height="26" rx="2" fill="url(#tg-case)" stroke="#8d8d87" stroke-width="1"/>
+                <rect x="-20" y="-16" width="26" height="18" fill="#5d8fbf"/>
+                <path d="M-20 2 L-8 -8 L-2 -3 L6 -12 V2 Z" fill="#8fb8de"/>
+                <path d="M-11 6 h8 l3 6 h-14 z" fill="#c9c9c4" stroke="#8d8d87" stroke-width="1"/>
+                <rect x="14" y="-22" width="12" height="34" rx="1.5" fill="url(#tg-case)" stroke="#8d8d87" stroke-width="1"/>
+                <path d="M17 -16 h6 M17 -12 h6" stroke="#8d8d87" stroke-width="1"/>
+              </symbol>
+            </defs>
+            <rect class="topo-bg" x="0" y="0" width="820" height="510" rx="12"/>
             <!-- zonas -->
-            <rect class="zone zone-in" x="40" y="262" width="410" height="196" rx="16"/>
-            <text class="zone-label" x="58" y="286">INSIDE · 192.168.10.0/24</text>
-            <text class="zone-label dim" x="58" y="301">security-level 100</text>
-            <rect class="zone zone-remote" x="490" y="262" width="250" height="196" rx="16"/>
-            <text class="zone-label" x="506" y="286">LAN REMOTA</text>
-            <text class="zone-label dim" x="506" y="301">172.30.3.0/24</text>
+            <rect class="zone" x="64" y="300" width="470" height="196" rx="12"/>
+            <text class="t-zone" x="80" y="322" style="text-anchor:start">Inside · 192.168.10.0/24</text>
+            <rect class="zone zone-r" x="568" y="300" width="200" height="196" rx="12"/>
+            <text class="t-zone t-zone-r" x="666" y="318" style="text-anchor:start">LAN remota</text><text class="t-zone t-zone-r" x="666" y="331" style="text-anchor:start;font-weight:400">172.30.3.0/24</text>
+            <rect class="eigrp-pill" x="352" y="8" width="116" height="22" rx="11"/>
+            <text class="t-eigrp" x="410" y="23" style="text-anchor:middle">EIGRP AS 10</text>
 
-            <!-- enlaces WAN seriales (EIGRP) -->
-            <path class="ln ln-wan" d="M150 160 L380 66"/>
-            <path class="ln ln-wan" d="M380 66 L640 160"/>
-            <text class="ln-label" x="228" y="96" transform="rotate(-22 228 96)">10.10.10.0/30</text>
-            <text class="ln-label" x="520" y="98" transform="rotate(20 520 98)">10.20.20.0/30</text>
-            <text class="eigrp" x="380" y="26">EIGRP AS 10</text>
+            <!-- enlaces -->
+            <path class="ln-serial" d="M192 188 L285.5 135.9 L284.6 146.7 L293.4 121.3 L292.5 132.1 L386 80"/>
+            <path class="ln-serial" d="M434 80 L527.5 132.1 L517.9 137.0 L544.1 131.0 L534.5 135.9 L628 188"/>
+            <path class="ln" d="M200 200 H384"/>
+            <path class="ln" d="M410 224 V336"/>
+            <path class="ln" d="M204 352 H374"/>
+            <path class="ln" d="M170 366 V424"/>
+            <path class="ln" d="M410 366 V424"/>
+            <path class="ln" d="M650 220 V336"/>
+            <path class="ln" d="M650 366 V424"/>
+            <path class="ln" d="M140 200 H86 M86 190 V210"/>
 
-            <!-- outside R1 - ASA -->
-            <path class="ln ln-out" d="M150 160 L330 160"/>
-            <text class="ln-label" x="244" y="182">209.165.200.224/27</text>
-            <text class="ln-label dim" x="244" y="196">outside · security-level 0</text>
+            <!-- redes -->
+            <text class="t-net" x="272" y="130" style="text-anchor:middle" transform="rotate(-28 272 130)">10.10.10.0/30</text>
+            <text class="t-net" x="548" y="130" style="text-anchor:middle" transform="rotate(28 548 130)">10.20.20.0/30</text>
+            <text class="t-net" x="290" y="226" style="text-anchor:middle">209.165.200.224/27</text>
+            <text class="t-if" x="40" y="174" style="text-anchor:start">Lo1 · 172.20.1.1/24</text>
 
-            <!-- loopback -->
-            <path class="ln ln-lo" d="M126 160 L60 160 M60 146 V174"/>
-            <text class="ln-label" x="30" y="132" style="text-anchor:start">Lo1 · 172.20.1.0/24</text>
+            <!-- interfaces -->
+            <text class="t-if" x="206" y="192" style="text-anchor:start">Gi0/0 .230</text>
+            <text class="t-if" x="380" y="192" style="text-anchor:end">e0/0: outside (0)</text>
+            <text class="t-if" x="380" y="226" style="text-anchor:end">.231</text>
+            <text class="t-if" x="418" y="262" style="text-anchor:start">e0/1: inside (100)</text>
+            <text class="t-if" x="418" y="276" style="text-anchor:start">192.168.10.1</text>
+            <text class="t-if" x="186" y="166" style="text-anchor:end">S0/1/0 .1</text>
+            <text class="t-if" x="372" y="102" style="text-anchor:end">S0/1/0 .2</text>
+            <text class="t-if" x="448" y="102" style="text-anchor:start">S0/1/1 .1</text>
+            <text class="t-if" x="636" y="166" style="text-anchor:end">S0/1/1 .2</text>
+            <text class="t-if" x="658" y="262" style="text-anchor:start">Gi0/0 .1</text>
 
-            <!-- LAN interna -->
-            <path class="ln" d="M370 188 L370 322"/>
-            <path class="ln" d="M140 336 L340 336"/>
-            <path class="ln" d="M140 350 L140 392"/>
-            <path class="ln" d="M370 350 L370 392"/>
-            <!-- LAN remota -->
-            <path class="ln" d="M640 222 L640 322"/>
-            <path class="ln" d="M640 350 L640 392"/>
+            <!-- equipos -->
+            <use href="#ic-router" x="170" y="200"/><use href="#ic-router" x="410" y="72"/><use href="#ic-router" x="650" y="200"/>
+            <use href="#ic-asa" x="410" y="200"/>
+            <use href="#ic-switch" x="170" y="352"/><use href="#ic-switch" x="410" y="352"/><use href="#ic-switch" x="650" y="352"/>
+            <use href="#ic-pc" x="170" y="448"/><use href="#ic-pc" x="410" y="448"/><use href="#ic-pc" x="650" y="448"/>
 
-            <g class="nd nd-router" transform="translate(380 66)">
-              <circle r="24"/><path d="M-10 -4 h20 m-5 -5 l5 5 l-5 5 M10 4 h-20 m5 -5 l-5 5 l5 5"/>
-              <text class="nd-name" y="42">R2</text><text class="nd-sub" y="56">Cisco 1941</text>
-            </g>
-            <g class="nd nd-router" transform="translate(150 160)">
-              <circle r="24"/><path d="M-10 -4 h20 m-5 -5 l5 5 l-5 5 M10 4 h-20 m5 -5 l-5 5 l5 5"/>
-              <text class="nd-name" y="42">R1</text><text class="nd-sub" y="56">Cisco 1941</text>
-            </g>
-            <g class="nd nd-router" transform="translate(640 160)">
-              <circle r="24"/><path d="M-10 -4 h20 m-5 -5 l5 5 l-5 5 M10 4 h-20 m5 -5 l-5 5 l5 5"/>
-              <text class="nd-name" y="42">R3</text><text class="nd-sub" y="56">Cisco 1941</text>
-            </g>
-
-            <g class="nd nd-asa" transform="translate(370 160)">
-              <path d="M-26 -24 h52 v22 c0 16 -12 26 -26 32 c-14 -6 -26 -16 -26 -32 z"/>
-              <path class="asa-lock" d="M-7 -2 h14 v12 h-14 z M-4 -2 v-5 a4 4 0 0 1 8 0 v5"/>
-              <text class="nd-name" x="36" y="-2" style="text-anchor:start">ASA 5505</text>
-              <text class="nd-sub" x="36" y="12" style="text-anchor:start">NAT · ACL · inspect icmp</text>
-            </g>
-
-            <g class="nd nd-switch" transform="translate(140 336)">
-              <rect x="-30" y="-14" width="60" height="28" rx="6"/><path d="M-16 -4 h32 M-16 4 h32"/>
-              <text class="nd-name" x="40" y="5" style="text-anchor:start">S1</text>
-            </g>
-            <g class="nd nd-switch" transform="translate(370 336)">
-              <rect x="-30" y="-14" width="60" height="28" rx="6"/><path d="M-16 -4 h32 M-16 4 h32"/>
-              <text class="nd-name" x="40" y="5" style="text-anchor:start">S2</text>
-            </g>
-            <g class="nd nd-switch" transform="translate(640 336)">
-              <rect x="-30" y="-14" width="60" height="28" rx="6"/><path d="M-16 -4 h32 M-16 4 h32"/>
-              <text class="nd-name" x="40" y="5" style="text-anchor:start">S3</text>
-            </g>
-            <g class="nd nd-pc" transform="translate(140 410)">
-              <rect x="-18" y="-14" width="36" height="24" rx="3"/><path d="M-8 16 h16"/>
-              <text class="nd-name" y="36">PC A</text><text class="nd-sub" y="50">192.168.10.10</text>
-            </g>
-            <g class="nd nd-pc" transform="translate(370 410)">
-              <rect x="-18" y="-14" width="36" height="24" rx="3"/><path d="M-8 16 h16"/>
-              <text class="nd-name" y="36">PC B</text><text class="nd-sub" y="50">192.168.10.11</text>
-            </g>
-            <g class="nd nd-pc" transform="translate(640 410)">
-              <rect x="-18" y="-14" width="36" height="24" rx="3"/><path d="M-8 16 h16"/>
-              <text class="nd-name" y="36">PC C</text><text class="nd-sub" y="50">172.30.3.10</text>
-            </g>
+            <!-- nombres -->
+            <text class="t-dev" x="170" y="236" style="text-anchor:middle">R1</text><text class="t-sub" x="170" y="249" style="text-anchor:middle">Cisco 1941</text>
+            <text class="t-dev" x="410" y="50" style="text-anchor:middle">R2 · Cisco 1941</text>
+            <text class="t-dev" x="636" y="236" style="text-anchor:end">R3</text><text class="t-sub" x="636" y="249" style="text-anchor:end">Cisco 1941</text>
+            <text class="t-dev" x="454" y="174" style="text-anchor:start">ASA 5505</text>
+            <text class="t-sub" x="454" y="187" style="text-anchor:start">NAT · ACL · inspect icmp</text>
+            <text class="t-dev" x="128" y="356" style="text-anchor:end">S1</text>
+            <text class="t-dev" x="454" y="356" style="text-anchor:start">S2</text>
+            <text class="t-dev" x="694" y="356" style="text-anchor:start">S3</text>
+            <text class="t-dev" x="170" y="478" style="text-anchor:middle">PC A</text><text class="t-sub" x="170" y="491" style="text-anchor:middle">192.168.10.10</text>
+            <text class="t-dev" x="410" y="478" style="text-anchor:middle">PC B</text><text class="t-sub" x="410" y="491" style="text-anchor:middle">192.168.10.11</text>
+            <text class="t-dev" x="650" y="478" style="text-anchor:middle">PC C</text><text class="t-sub" x="650" y="491" style="text-anchor:middle">172.30.3.10</text>
           </svg></div>
               <figcaption><span class="topo-hint"><i class="bi bi-arrows" aria-hidden="true"></i> Desliza para ver todo el diagrama. </span>Topología implementada. Prueba final: ping exitoso entre PC A y PC C en ambos sentidos.</figcaption>
             </figure>
