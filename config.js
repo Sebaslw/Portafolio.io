@@ -49,7 +49,8 @@ window.SITE_CONFIG = {
       "PK-PENTECOSTAL": "assets/img/projects/pk-pentecostal-card.webp",
       "desbord-it": "assets/img/projects/desbord-it.webp",
       "appfinanzas.github.io": "assets/img/projects/appfinanzas.webp",
-      "QR": "assets/img/projects/qr.webp"
+      "QR": "assets/img/projects/qr.webp",
+      "Laboratorio_CCNA_EIGRP-ASA": "assets/img/projects/ccna-topologia.webp"
     },
     // Respaldo si la API de GitHub no responde o se agota el límite.
     // Datos verificados en el perfil público el 23/11/2026.
